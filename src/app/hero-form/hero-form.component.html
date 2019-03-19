@@ -5,8 +5,9 @@
       <label for="name">Name</label>
       <input type="text" class="form-control" id="name"
              required
-             [(ngModel)]="model.name" name="name">
+             [(ngModel)]="model.name" name="name" #spy>
       TODO: remove this: {{model.name}}
+      <div>class-name="{{spy.className}}"</div>
     </div>
 
     <div class="form-group">
